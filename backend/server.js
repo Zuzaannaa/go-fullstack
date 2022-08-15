@@ -1,5 +1,8 @@
 const http = require("http");
 const app = require("./app");
+const config = require("./config.js");
+
+console.log(`NODE_ENV=${config.NODE_ENV}`);
 
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
